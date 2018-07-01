@@ -217,8 +217,7 @@ if __name__ == '__main__':
                        quote_currency='usd',
                        start=pd.to_datetime('2018-01-01', utc=True),
                        end=pd.to_datetime('2018-06-08', utc=True),
-                       output=out,
-                       fast_backtest=True
+                       output=out
     )
     log.info('saved perf stats: {}'.format(out))
     plt.show()
